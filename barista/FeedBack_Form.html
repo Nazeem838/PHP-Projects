@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+        <title>Feedback Form</title>
+        <style>
+       * {
+              margin: 0px;
+              
+          }
+           body{
+              background-color: white;
+          }
+
+          #logo-section {
+           background-color: #890F0D;
+              height: 100px;
+              position: relative;
+          }
+          #menubar{
+              position: absolute;
+              top: 0;
+              left:0;
+              margin-left: 140px;
+              margin-top: 10px;
+              font-size: 75px;
+              font-family:'Capriola';              
+              font-weight: normal;
+           }
+           #menubar li {
+               display: flex;
+               flex-direction: column;
+               float: left;
+             
+           }
+           #menubar li a {
+               display: block;
+               padding: 25px 25px;
+               color: white;
+               text-decoration: none;
+               font-size: 30px;
+           }
+         section {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 100%;
+           min-height: 100vh;
+           }
+         section .layout {
+           position: relative;
+           width: 100%;
+           max-width: 600px;
+           padding: 50px;
+           box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+           background: rgba(255, 255, 255, 0.1);
+           backdrop-filter: blur(5px);
+           border: 1px solid rgba(255, 255, 255, 0.25);
+           border-radius: 10px;
+       }
+       section .layout button {
+           position: relative;
+       }
+       h1 {
+         text-align: center;
+       }
+       .footer {
+           position: relative;
+           left: "0px";
+           bottom: "0px";
+           width: 100%;
+           background-color: #fff8dc;
+           color: grey;
+           text-align: center;
+           
+       }
+       body {
+           background-image: url('registration_form.jpg');
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           background-size: cover;
+       }
+       .registerbtn {
+           background-color:  #890F0D;
+           color: white;
+           padding: 16px 20px;
+           margin: 8px 0;
+           border: none;
+           cursor: pointer;
+           width: 100%;
+           opacity: 0.9;
+         }
+         .registerbtn:hover {
+           opacity:1;
+         }
+         a {
+           color: dodgerblue;
+         }
+         input[type=text], input[type=password], input[type=email], input[type=date] {
+           width: 90%;
+           padding: 15px;
+           margin: 5px 0 22px 0;
+           display: inline-block;
+           border: none;
+           background: #f1f1f1;
+         }
+         /* The dropdown container */
+         .dropdown {
+             float: left;
+             overflow: hidden;
+           }
+
+           /* Dropdown button */
+           .dropdown .dropbtn {
+             font-size: 30px;
+             font-family:'Capriola';              
+             font-weight: normal;
+             border: none;
+             outline: none;
+             color: white;
+             top: 0;
+             left:0;
+             position: relative;
+             padding: 25px 25px;
+             background-color: inherit;
+             font-family: inherit; /* Important for vertical align on mobile phones */
+             margin: 0; /* Important for vertical align on mobile phones */
+           }
+
+           /* Add a red background color to navbar links on hover */
+           .navbar a:hover, .dropdown:hover .dropbtn {
+             background-color: red;
+           }
+
+           /* Dropdown content (hidden by default) */
+           .dropdown-content {
+             display: none;
+             position: absolute;
+             background-color: #f9f9f9;
+             min-width: 160px;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+             z-index: 1;
+           }
+
+           /* Links inside the dropdown */
+           .dropdown-content a {
+             font-size: 30px;
+             float: none;
+             color: black;
+             padding: 12px 16px;
+             text-decoration: none;
+             display: block;
+             text-align: left;
+           }
+
+           /* Add a grey background color to dropdown links on hover */
+           .dropdown-content a:hover {
+             background-color: #ddd;
+           }
+
+           /* Show the dropdown menu on hover */
+           .dropdown:hover .dropdown-content {
+             display: block;   
+           }
+
+          input[type=text], input[type=password], input[type=email], input[type=date] {
+            width: 90%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+          }
+          input[type=suggestion]{
+            width: 78%;
+            padding: 50px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+          }
+        </style>
+    </head>
+    <body>
+       <div id="logo-section">
+        <div class="countainer-leftalign">
+          <img src="barista logo.jpg" height="100px" width="170px">
+          <ul id="menubar">
+              <li><a href="barista.html">HOME</a></li>
+              <div class="dropdown">
+                <div class="dropbtn">MENU</div>
+                <div class="dropdown-content">
+                  <a href="Table_Booking.html">Table Booking</a>
+                </div>
+              </div>
+              <li><a href="https://barista.co.in/store-locator/">STORE LOCATOR</a></li>
+              <li><a href="FeedBack_Form.html">FEEDBACK FORM</a></li>
+              <li><a href="Register.html">REGISTER</a></li>  
+          </ul>   
+        </div>
+       <section>
+        <div class="layout">
+              <h1>Feedback Form</h1>
+              <form name="frmFeedback" method="post" action="FeedBack_Form.php">
+              <b>Full Name:</b><br>
+              <input type="text" placeholder=" Name" name="txtName">
+              <br>
+              <b>Address:</b><br>
+              <input type="text" placeholder="Address" name="txtAddress"> 
+              <br>
+              <b>Email:</b><br>
+              <input type="email" placeholder="Email" name="txtEmail">
+              <br>
+              <b>Feedback:</b><br>
+              <input type="suggestion" placeholder="Suggestion" name="txtFeedback">
+              <br>
+              <button type="submit" class="registerbtn" name="Submit" id="Submit" value="Submit">Submit</button>
+        </div>
+        </section>
+          <div class="footer">
+            <p>Barista Coffee Company Limited.All Right Reserved</p>
+          </div>
+    </html>

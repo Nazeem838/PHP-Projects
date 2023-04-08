@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    padding: 0px 20px;
+    background-color: #2a5359;
+}
+.container{
+    max-width: 500px;
+    width: 100%;
+    background-color: #e69694;
+    margin: 10px auto;
+    padding: 30px 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.container .signin p{
+    margin-left: 80px;
+}
+.container .signin a{
+    text-decoration: none;
+    color: #2a5359;
+    font-weight: 700;
+}
+.container .register .register-link{
+    margin-left: 115px;
+}
+.container .register a{
+    text-decoration: none;
+    color: #2a5359;
+    font-weight: 700;
+}
+.container .title{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2a5359;
+}
+.container .form{
+    width: 100%;
+}
+.container .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;   
+}
+.container .form .input_field label{
+    width: 55%;
+    font-size: 15px;
+}
+.container .form .input_field .input{
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    padding: 5px 5px;
+    border: lightgrey;
+}
+.container .form .input_field p{
+    width: 100%;
+    margin-right: 80px;
+    font-size: 15px;
+}
+.container .form .input_field .checkbox{
+    margin-left: 100px;
+}
+.container .form .input_field .selectbox{
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    padding: 5px 5px;
+    border: lightgrey;
+    height: 30px;
+}
+.container .form .input_field .btn{
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: #2a5359;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+.container .form .input_field .btn:hover{
+    background-color: white;
+    color: black;
+}
